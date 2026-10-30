@@ -1,174 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CV-Evgeny Musatov</title>
-    <link rel="icon" href="./public/pics/EM_icon2.ico" type="image/png">
+    <title>Evgeny Musatov, BI Expert</title>
+    <meta name="description" content="Evgeny Musatov, BI Expert in Tel Aviv: Tableau dashboards, SQL and BigQuery. Experience, skills and contact details.">
+    <link rel="canonical" href="https://evgeny94.github.io/cv/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Evgeny Musatov, BI Expert">
+    <meta property="og:description" content="BI Expert in Tel Aviv. I build Tableau dashboards and the SQL behind them.">
+    <meta property="og:url" content="https://evgeny94.github.io/cv/">
+    <meta property="og:image" content="https://evgeny94.github.io/cv/public/pics/me.jpg">
+    <link rel="icon" id="tab-icon" href="./public/pics/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./public/pics/apple-touch-icon.png">
 
-    <!-- please make all buttons orange, including this one! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Forum&family=Gloock&family=Jomolhari&family=Kaushan+Script&family=Stardos+Stencil&family=Yeseva+One&display=swap" rel="stylesheet">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Major+Mono+Display&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./public/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/CV.css">
-    
-    <meta name=" content =" width=device width, initial scale=1.0>
-</head>
-<body">
+    <script>try { if (localStorage.getItem('mode') === 'light') { document.documentElement.dataset.mode = 'light'; document.getElementById('tab-icon').href = './public/pics/icon-light.svg'; } } catch (e) {}</script>
 
-<div class="row-header">
-    <div class="col-4-legacy">
-        
-        <a style="text-decoration:none"  href="./">
-            <div class="col-12-legacy" id="legacy">
-                Evgeny Musatov
-            </div>
-        </a>
-        
-        
-        
-        <div class="col-12-social-links">
-            <div class="col-4-no-padding">
-                <div class="col-33-row-header">
-                    <a href="https://www.facebook.com/evgenymusatov/" target="_blank">
-                        <span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
-                </div>
-        
-                <div class="col-33-row-header"><a href="https://www.linkedin.com/in/evgeny-musatov-26b2ab1b9/" target="_blank">
-                    <span class="icon"><i class="fa-brands fa-linkedin"></i></span></a>
-                </div>
-        
-                <div class="col-33-row-header"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Evgenymusatov94@gmail.com" target="_blank">
-                    <span class="icon"><i class="fa-solid fa-envelope"></i></span></a>
-                </div>
-        
-                <div class="col-33-row-header"><a href="https://github.com/evgeny94" target="_blank">
-                    <span class="icon"><i class="fa-brands fa-github"></i></span></a>
-                </div>
-                <div class="col-33-row-header"><a href="https://wa.me/972546484531" target="_blank">
-                    <span class="icon"><i class="fa-brands fa-whatsapp"></i></span></a>
-                </div>
-            </div>
-        </div>  
-        
-    </div>
-    <a style="text-decoration:none"  href="./">
-        <div class="col-12-home">
-            <span class="icon-home"><i class="fa-solid fa-house"></i></span>
-        </div>
-    </a>
-</div>
-
-<div class="row-top">
-    <div class="col-12-top">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-
-        <div class="col-4-shake">
-            <button id="button-download" class="button-download" onclick="downloadCV()">Download CV</button>
-        </div>
-        <div class="col-3" id="myimage_div"> 
-            <a style="text-decoration:none"  href="./">
-                <img src="./public/pics/me.jpg" id="myimage">
-            </a>
-        </div>
-        
-        <div class="col-4-page-links">
-            <button class="col-33-page-links" onclick="scrollToSection('col-6-section1')">About</button>
-            <button class="col-33-page-links" onclick="scrollToSection('col-12-section2')">Skills</button>
-            <button class="col-33-page-links" onclick="goto('./public/pages/experience.html')">Experience</button>
-            <button class="col-33-page-links" onclick="goto('./public/pages/portfolio.html')">Portfolio</button>
-        </div>
-        
-    </div>
-</div>
-
-<div class="row-main">
-    <div class="ttrow1">
-        <div class="col-6-section1" id="section1">
-            <h2>About</h2>
-            <ul>
-                <li id="age"> Years Old</li>
-                <li>Self-disciplined</li>
-                <li>Well organized</li>
-                <li>Strive for professionalism</li>
-                <li>High self-learning abilities</li>
-            </ul>
-        </div>
-        <div class="col-6">
-            <h2>Basic Information</h2>
-            <ul>
-                <li>B.Sc. in Industrial Engineering and Management</li>
-                <li>Information Systems Emphasis</li>
-                <li>Ben-Gurion University Alumnus</li>
-                <li>Residing in Tel-Aviv</li>
-                <li>English, Russian and Hebrew - Fluent</li>
-            </ul>
-        </div>
-    </div>
-    <div class="ttrow2">
-        <div class="col-12-section2" id="section2">
-            
-                <h2>Professional Skills</h2>
-            <div class="col-12-section2-main">
-                <div class="col-12-section2-g">
-                    <h4>General</h4>
-                    <ul>
-                        <li>Effective Problem-Solving Skills</li>
-                        <li>Collaborative team player</li>
-                        <li>Effective Decision-Making</li>
-                        <li>Strong Analytical Skills</li>
-                    </ul>
-                </div>
-                <div class="col-12-section2-cs">
-                    <h4>Programming & Tools</h4>
-                    <ul>
-                        <li>Java, NodeJS, Python, R</li>
-                        <li>Html, CSS, JavaScript</li>
-                        <li>SQL, Tableau, Tableau-Server(Linux)</li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    
-</div>
-
-<div class="row-footer">
-    <div class="col-12-bottom">
-        <div class="col-3-footer">
-            <button id="goUp" class="btn-goUp" onclick="scrollToSection('row-header')">Go - Up <i class="fa-solid fa-circle-chevron-up"></i></button>
-        </div>
-    </div>
-
-</div>
-
-<script>
-    // Check if the browser supports the HTML5 History API
-    if (window.history && window.history.pushState) {
-      // Use pushState to change the URL without reloading the page
-      setTimeout(function() {
-        window.history.pushState(null, null, "./");
-      }, 1);
-      
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Evgeny Musatov",
+        "jobTitle": "BI Expert",
+        "worksFor": { "@type": "Organization", "name": "proteanTecs" },
+        "url": "https://evgeny94.github.io/cv/",
+        "image": "https://evgeny94.github.io/cv/public/pics/me.jpg",
+        "email": "mailto:evgenymusatov94@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Tel Aviv", "addressCountry": "IL" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Ben-Gurion University of the Negev" },
+        "knowsLanguage": ["he", "en", "ru"],
+        "sameAs": [
+            "https://www.linkedin.com/in/evgeny-musatov-26b2ab1b9/",
+            "https://github.com/evgeny94"
+        ]
     }
-</script>
+    </script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!--
+    HOW TO UPDATE THIS PAGE
+    Everything is plain HTML in this one file. Each section below starts with a
+    comment that says how to add or change an entry. Copy an existing block,
+    paste it, and edit the text. Then change the "Last updated" line at the bottom.
+    The Word CV behind "Download CV" is "Evgeny Musatov-CV.docx" in the repo root.
+-->
+
+<header class="nav">
+    <div class="container nav__inner">
+        <a class="nav__name" href="./">Evgeny Musatov</a>
+        <div class="nav__right">
+            <nav aria-label="Sections">
+                <ul class="nav__links">
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn mode" type="button" id="mode-toggle" hidden>Light mode</button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+    <!-- INTRO: name, current role (the line with the green dot), buttons, and your one-line pitch. -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+            <img class="hero__photo" src="./public/pics/me.jpg" width="88" height="88" alt="Evgeny Musatov">
+            <div>
+                <h1 id="hero-title">Evgeny Musatov</h1>
+                <p class="status">BI Expert at proteanTecs</p>
+            </div>
+            <div class="hero__actions">
+                <a class="btn" href="mailto:evgenymusatov94@gmail.com">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+                    Email me
+                </a>
+                <a class="btn btn--primary" id="button-download" href="./Evgeny%20Musatov-CV.docx" download>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg>
+                    Download CV
+                </a>
+            </div>
+            <p class="lead">BI Expert in Tel Aviv. I build Tableau dashboards and the SQL behind them.</p>
+        </div>
+    </section>
+
+    <div class="container layout">
+
+        <div class="main">
+            <!-- EXPERIENCE: one <li class="job"> per role, newest first. Copy a whole <li class="job"> ... </li> block to add a role.
+                 Give the current role class="job job--now" (green dot and date) and remove job--now from the old one. -->
+            <section id="experience" aria-labelledby="experience-title">
+                <h2 class="title" id="experience-title">Experience</h2>
+                <ol class="timeline">
+                    <li class="job job--now">
+                        <p class="job__when num">Jul 2025 – Present</p>
+                        <span class="job__track" aria-hidden="true"></span>
+                        <div class="job__what">
+                            <div class="job__title"><h3>BI Expert</h3><p class="job__org">at proteanTecs</p></div>
+                            <p class="job__where">Tel Aviv, hybrid</p>
+                            <ul>
+                                <li>Tableau and database work for the company’s BI</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="job">
+                        <p class="job__when num">Sep 2022 – Jul 2025</p>
+                        <span class="job__track" aria-hidden="true"></span>
+                        <div class="job__what">
+                            <div class="job__title"><h3>BI Developer</h3><p class="job__org">at CytoReason</p></div>
+                            <p class="job__where">Via Naya Technologies</p>
+                            <ul>
+                                <li>Built Tableau dashboards to user requirements and presented them to external clients</li>
+                                <li>Ran the company’s Tableau Server and licensing</li>
+                                <li>Moved Tableau data sources from Postgres to BigQuery with Python and Tableau Prep, cutting costs</li>
+                                <li>Brought Jira data into Tableau through its API to track team workload</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="job">
+                        <p class="job__when num">Jun 2021 – Sep 2022</p>
+                        <span class="job__track" aria-hidden="true"></span>
+                        <div class="job__what">
+                            <div class="job__title"><h3>BI Developer</h3><p class="job__org">at BLEND Localization</p></div>
+                            <p class="job__where">Part-time</p>
+                            <ul>
+                                <li>SQL, ETL processes and Tableau dashboards over multiple data sources</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="job job--short">
+                        <p class="job__when num">2019 – 2020</p>
+                        <span class="job__track" aria-hidden="true"></span>
+                        <div class="job__what">
+                            <div class="job__title"><h3>Teacher</h3><p class="job__org">at Impulse School</p></div>
+                        </div>
+                    </li>
+                    <li class="job job--short">
+                        <p class="job__when num">2012 – 2015</p>
+                        <span class="job__track" aria-hidden="true"></span>
+                        <div class="job__what">
+                            <div class="job__title"><h3>Commander of novices, Operations sergeant</h3><p class="job__org">at IDF</p></div>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- PROJECT: edit the text inside the card. -->
+            <article class="project" id="projects" aria-labelledby="project-title">
+                <p class="project__kind">Selected project, B.Sc. final project</p>
+                <h3 id="project-title">Robot interface for thinning date spikelets</h3>
+                <p>A Python interface that lets a person and a robot share the work. Users rated it <span class="num">77.81</span> on the System Usability Scale.</p>
+                <a class="btn btn--small" href="https://github.com/evgeny94/user_interface" target="_blank" rel="noopener">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m8 8-5 4 5 4m8-8 5 4-5 4M14 5l-4 14"/></svg>
+                    Code on GitHub
+                </a>
+            </article>
+        </div>
+
+        <aside class="side" aria-label="Contact, skills and education">
+            <!-- CONTACT: one <li> per way to reach you. -->
+            <section id="contact" aria-labelledby="contact-title">
+                <h2 class="title" id="contact-title">Contact</h2>
+                <ul class="contact">
+                    <li><a href="mailto:evgenymusatov94@gmail.com">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+                        <span>evgenymusatov94@gmail.com</span></a></li>
+                    <li><a href="tel:+972546484531">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+                        <span>054-648-4531</span></a></li>
+                    <li><a href="https://wa.me/972546484531" target="_blank" rel="noopener">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.7z"/></svg>
+                        <span>WhatsApp</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/evgeny-musatov-26b2ab1b9/" target="_blank" rel="noopener">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+                        <span>LinkedIn</span></a></li>
+                    <li><a href="https://github.com/evgeny94" target="_blank" rel="noopener">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 4.5v-3.5a3 3 0 0 0-.9-2.4c3-.3 6-1.5 6-6.6a5 5 0 0 0-1.4-3.6 4.7 4.7 0 0 0-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.5 0C6 1.2 4.9 1.5 4.9 1.5a4.7 4.7 0 0 0-.1 3.5A5 5 0 0 0 3.4 8.6c0 5 3 6.3 6 6.6a3 3 0 0 0-.9 2.3V21"/></svg>
+                        <span>GitHub</span></a></li>
+                </ul>
+            </section>
+
+            <!-- SKILLS: one <li> per skill; copy a whole <div> ... </div> to add a group. -->
+            <section id="skills" aria-labelledby="skills-title">
+                <h2 class="title" id="skills-title">Skills</h2>
+                <dl class="skills">
+                    <div>
+                        <dt>BI</dt>
+                        <dd><ul class="pills"><li>Tableau Desktop</li><li>Tableau Prep</li><li>Tableau Server (Linux)</li></ul></dd>
+                    </div>
+                    <div>
+                        <dt>Data</dt>
+                        <dd><ul class="pills"><li>SQL</li><li>BigQuery</li><li>ETL</li><li>Excel + VBA</li><li>Google Analytics</li></ul></dd>
+                    </div>
+                    <div>
+                        <dt>Code</dt>
+                        <dd><ul class="pills"><li>Python</li><li>R</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul></dd>
+                    </div>
+                </dl>
+            </section>
+
+            <!-- EDUCATION AND LANGUAGES -->
+            <div class="facts">
+                <section aria-labelledby="edu-title">
+                    <h2 class="title" id="edu-title">Education</h2>
+                    <p>B.Sc. Industrial Engineering and Management, Information Systems track</p>
+                    <p class="meta">Ben-Gurion University, <span class="num">2018 – 2022</span></p>
+                </section>
+                <section aria-labelledby="lang-title">
+                    <h2 class="title" id="lang-title">Languages</h2>
+                    <p>Hebrew, English, Russian</p>
+                    <p class="meta">All fluent</p>
+                </section>
+            </div>
+        </aside>
+
+    </div>
+
+</main>
+
+<!-- FOOTER: change the "Last updated" month whenever you edit the page. -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <p>Last updated October 2026</p>
+        <a href="#main">Back to top</a>
+    </div>
+</footer>
 
 <script src="./public/CV.js"></script>
 </body>

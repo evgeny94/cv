@@ -7,24 +7,22 @@ Evgeny Musatov's personal CV / portfolio website: plain HTML, CSS and JavaScript
 ## Local preview
 
 ```bash
-python -m http.server 8000   # then open http://localhost:8000
+python -m http.server 5173   # then open http://localhost:5173
 ```
-There is no lint or test tooling.
+There is no build or test tooling. The design linter from the Hallmark skill can be run when it is installed: `node ~/.claude/skills/hallmark/scripts/sloplint.mjs index.html --genre editorial --render`.
 
 ## Structure
 
-The site has three pages that share one stylesheet (`public/css/CV.css`) and one script (`public/CV.js`):
-- `index.html`: home page with the About (`#section1`) and Skills (`#section2`) sections
-- `public/pages/experience.html`
-- `public/pages/portfolio.html`
+A single page, `index.html`, with sections `#experience`, `#projects`, `#skills` and `#contact`. No script is needed to render it.
+- `public/css/CV.css`: the page styles. Its first lines are the Hallmark design stamp (navy and lime, sidebar plus experience timeline); keep them at the top. It imports `tokens.css` (every colour, font and spacing value, as CSS variables; dark is the default `:root`, light mode is the `[data-mode="light"]` block) and `base.css` (resets). Put new colours or fonts in `tokens.css`, never as literals in `CV.css`.
+- `public/CV.js`: the light/dark toggle (remembered in localStorage, read by a one-line script in the `<head>` before paint), plus `downloadCV()` and `goto()` kept for old links.
+- `public/pages/experience.html` and `portfolio.html` are redirect stubs to `#experience` and `#projects`, so old links keep working. Don't build pages there.
+- `public/pics/`: `me.jpg` (the portrait, only 107x107), and the tab icons: `icon.svg` (lime E, dark mode), `icon-light.svg` (aqua E, light mode; `CV.js` swaps them with the mode toggle) and `apple-touch-icon.png` (phone home screen). The old `.ico` files are unused.
+- `Evgeny Musatov-CV.docx` in the repo root is what "Download CV" serves. To update it, replace the file and keep the exact filename, including the space.
+- `public/fontawesome-free-6.5.1-web/` (~28 MB) is no longer used by the page.
+- `.hallmark/` holds local design-lint output and is git-ignored.
 
-Things to know before editing:
-- **The header, the social-links row and the page-nav buttons are copied into all three HTML files.** Edit all three. The sub-pages reach shared assets via `../` and the home page via `../../`, while `index.html` uses `./public/...`. Keep those relative paths correct, because the site is served from the `/cv/` subpath.
-- Page navigation uses `goto(url)` in `CV.js` (on button `onclick`), not `<a>` links.
-- `CV.js` also computes the "Years Old" value from a hard-coded birthdate, toggles the "Go - Up" button based on page height, and provides `downloadCV()`. That function opens `Evgeny Musatov-CV.docx` from the repo root. To update the downloadable CV, replace that file and keep the exact filename, including the space.
-- An inline script in `index.html` rewrites the URL to `./` with `history.pushState` after load.
-- Font Awesome is loaded twice: v4.7 from the cdnjs CDN, and a vendored v6.5.1 copy under `public/fontawesome-free-6.5.1-web/` (~28 MB, mostly unused files). The icons use v6 class names (`fa-solid ...`).
-- Images and favicons are in `public/pics/` (`me.jpg`, `EM_icon*.ico`).
+Content edits: each section in `index.html` starts with an HTML comment that says how to add an entry (copy a `<li class="job">`, a skill `<li>` or a contact `<li>`; the current role gets `job--now`, which lights its dot and date). After editing, change the "Last updated" line in the footer. Copy rules the design follows: no em or en dashes (write "2021 to 2022"), sentence-case labels, no invented numbers.
 
 ## Keeping docs off the live site
 
